@@ -1,0 +1,63 @@
+exclude:
+  'vendor/**'
+
+linters:
+  MergeableSelector:
+    force_nesting: false
+
+  NameFormat:
+    enabled: false
+
+  PropertySortOrder:
+    order:
+      - position
+      - top
+      - right
+      - bottom
+      - left
+      - display
+      - float
+      - margin
+      - margin-top
+      - margin-right
+      - margin-bottom
+      - margin-left
+      - padding
+      - padding-top
+      - padding-right
+      - padding-bottom
+      - padding-left
+
+  PropertyUnits:
+    global: ['em', 'rem', '%']
+    properties:
+      border: ['px']
+      border-radius: ['%', 'px']
+      border-width: ['rem', 'px']
+      line-height: ['rem']
+      margin: ['em', 'rem']
+      padding: ['em', 'rem']
+      width: ['em', 'rem', '%', 'px']
+      height: ['em', 'rem']
+      top: ['rem', '%', 'px']
+      right: ['rem', '%', 'px']
+      bottom: ['rem', '%', 'px']
+      left: ['rem', '%', 'px']
+
+  SelectorFormat:
+    enabled: false
+
+  UrlFormat:
+    enabled: false
+
+  VariableForProperty:
+    enabled: true
+    properties:
+      - color
+      - font
+
+  VendorPrefix:
+    enabled: false
+
+  QualifyingElement:
+    enabled: false
